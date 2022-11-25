@@ -2,7 +2,8 @@
 <template>
   <header>
     <div class="logo">
-      <img class="header-logo" src="@/assets/img/dc-logo.png" alt="">
+      <img class="header-logo"
+      src="@/assets/img/dc-logo.png" alt="">
     </div>
     <div class="nav">
       <ul>
@@ -119,7 +120,8 @@ export default {
           height: 100%;
           line-height: 100px;
           list-style: none;
-          font-size: 15px;
+          font-size: 12px;
+          font-weight: bolder;
 
           a {
             text-decoration: none;
