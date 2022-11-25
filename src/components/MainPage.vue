@@ -7,6 +7,9 @@
         class="card-pasta"
         :movie="objMovie"
       />
+      <button class="load-more">
+        Load More
+      </button>
     </div>
   </main>
 </template>
@@ -117,6 +120,14 @@ main {
   }
   .card-movie {
     flex: 0 0 25%;
+  }
+
+  .load-more {
+    margin: 0 auto;
+    padding: 10px 45px;
+    background-color: blue;
+    border: none;
+    color: white;
   }
 }
 </style>

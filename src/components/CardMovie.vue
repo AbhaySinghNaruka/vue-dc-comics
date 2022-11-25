@@ -5,7 +5,7 @@
         :src="movie.thumb"
         :alt="movie.titolo"
       >
-      <h2>{{ movie.titolo }}</h2>
+      <h2>{{ movie.series }}</h2>
     </div>
   </div>
 </template>
@@ -26,6 +26,7 @@ export default {
     .contents {
       background-color: white;
       padding: 1em;
+      width: 220px;
       height: 100%;
       img {
         max-width: 90%;
