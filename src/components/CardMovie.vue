@@ -24,7 +24,7 @@ export default {
     text-align: center;
     padding: .1rem;
     .contents {
-      background-color: white;
+
       padding: 1em;
       width: 220px;
       height: 100%;

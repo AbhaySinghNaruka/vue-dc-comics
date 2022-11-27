@@ -1,5 +1,6 @@
 <template>
   <div>
+    <JumbotronPage />
     <HeaderPage />
     <MainPage />
     <FooterPage />
@@ -26,6 +27,7 @@ export default {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
   }
 
 </style>

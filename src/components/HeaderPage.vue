@@ -1,23 +1,30 @@
 /* eslint-enable */
 <template>
   <header>
-    <div class="logo">
-      <img class="header-logo"
-      src="@/assets/img/dc-logo.png" alt="">
+    <div class="big-container">
+      <div class="container">
+        <div class="logo">
+          <img class="header-logo"
+          src="@/assets/img/dc-logo.png" alt="">
+        </div>
+        <div class="nav">
+          <ul>
+            <li
+            :class="(link.isActive)? 'active-link' : ''"
+            v-for="(link,i) in menuLinks" :key="i"
+            >
+            <a
+            @click="activateLink(i)"
+            href="#">{{link.label.toUpperCase()}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-    <div class="nav">
-      <ul>
-        <li
-        :class="(link.isActive)? 'active-link' : ''"
-        v-for="(link,i) in menuLinks" :key="i"
-        >
-        <a
-        @click="activateLink(i)"
-        href="#">{{link.label.toUpperCase()}}</a>
-        </li>
-      </ul>
-    </div>
+    <div class="jumbotron"></div>
   </header>
+
 </template>
 
 <script>
@@ -89,14 +96,20 @@ export default {
 </script>
 
 <style lang="scss">
-  header {
+
+
+  .big-container {
     width: 1300px;
-    height: 100px;
+    height: 500px;
     margin: 0 auto;
-    color: black;
-    display: flex;
+
+
+    .container {
+      display: flex;
     justify-content: space-between;
     justify-items: center;
+    height: 100px;
+    }
 
     .logo {
       width: 100px;
@@ -104,6 +117,14 @@ export default {
       .header-logo {
         height: 100%;
       }
+    }
+
+    .jumbotron {
+      height: 250px;
+      background-image: url('@/assets/img/jumbotron.jpg');
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .nav {
@@ -137,5 +158,6 @@ export default {
         }
       }
     }
+
   }
 </style>

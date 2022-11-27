@@ -111,6 +111,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: lightgray;
   .container {
     display: flex;
     flex-wrap: wrap;
